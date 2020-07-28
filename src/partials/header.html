@@ -1,0 +1,69 @@
+{{#ifpage 'index'}}
+<header class="header header-main">
+    <div class="grid-container">
+        <div class="header-content grid-x align-center align-middle">
+            <a href="/" class="header__logo">
+                <h4 class="font-weight-800">Nîmes</h4>
+            </a>
+        </div>
+    </div>
+</header>
+{{/ifpage}}
+
+{{#ifpage 'catalog' 'product'}}
+<header class="header">
+    <div class="grid-container">
+        <div class="header-content grid-x align-justify align-middle">
+            <nav class="header__menu show-for-medium">
+                <ul class="header__nav grid-x list-reset">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="catalog.html">Woman</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="catalog.html">Man</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="catalog.html">New</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__burger hide-for-medium">
+                <div class="header__burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav class="header__burger-navbar">
+                    <ul class="header__nav list-reset">
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="catalog.html">Woman</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="catalog.html">Man</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a class="header__nav-link" href="catalog.html">New</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="/" class="header__logo">
+                <h4 class="font-weight-800">Nîmes</h4>
+            </a>
+            <ul class="header__social grid-x list-reset">
+                <li class="header__social-item">
+                    <a class="header__social-link" href="#">
+                        <img src="../assets/img/search.svg" alt="search" target="_blank" />
+                    </a>
+                </li>
+                <li class="header__social-item">
+                    <a class="header__social-link" href="#">
+                        <img src="../assets/img/basket.svg" alt="basket" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+{{/ifpage}}

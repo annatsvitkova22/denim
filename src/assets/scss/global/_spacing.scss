@@ -1,0 +1,83 @@
+$spacers: (
+    '0': 0,
+    '2': 2,
+    '3': 3,
+    '10': 10,
+    '15': 15,
+    '17': 17,
+    '20': 20,
+    '22': 22,
+    '24': 24,
+    '25': 25,
+    '27': 27,
+    '28': 28,
+    '32': 32,
+    '35': 35,
+    '36': 36,
+    '45': 45,
+    '50': 50,
+    '70': 70,
+    '60': 60,
+    '80': 80,
+);
+@each $number, $value in $spacers {
+    .p {
+        &-#{$number} {
+            padding: #{$value}px;
+        }
+    }
+
+    .pt {
+        &-#{$number} {
+            padding-top: #{$value}px;
+        }
+    }
+
+    .pb {
+        &-#{$number} {
+            padding-bottom: #{$value}px;
+        }
+    }
+
+    .pl {
+        &-#{$number} {
+            padding-left: #{$value}px;
+        }
+    }
+
+    .pr {
+        &-#{$number} {
+            padding-right: #{$value}px;
+        }
+    }
+
+    .m {
+        &-#{$number} {
+            margin: #{$value}px;
+        }
+    }
+
+    .mt {
+        &-#{$number} {
+            margin-top: #{$value}px;
+        }
+    }
+
+    .mb {
+        &-#{$number} {
+            margin-bottom: #{$value}px;
+        }
+    }
+
+    .ml {
+        &-#{$number} {
+            margin-left: #{$value}px;
+        }
+    }
+
+    .mr {
+        &-#{$number} {
+            margin-right: #{$value}px;
+        }
+    }
+}

@@ -1,0 +1,419 @@
+.about-product {
+    margin-top: 55px;
+    position: relative;
+    margin-bottom: 73px;
+}
+.product {
+    max-height: 656px;;
+}
+
+.likeProducts {
+    padding-bottom: 76px;
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+.productInfo {
+    padding: 63px 0 70px 70px;
+    max-width: 48.75%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: auto;
+
+    &__title {
+        padding-bottom: 31px;
+    }
+
+    &__text {
+        max-width: 370px;
+        font-size: 16px;
+        line-height: 1.2;
+        padding-bottom: 44px;
+    }
+
+    &__buttonsSize, &__buttonsColor {
+        input[type="radio"] {
+            display: none;
+        }
+
+        padding-bottom: 35px;
+    }
+
+    &__buttonsSize {
+        padding-top: 13px;
+        padding-bottom: 28px;
+    }
+
+    &__buttonColor + &__buttonColor {
+        margin-left: 19px;
+    }
+
+    &__buttonColor {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        border: 3px solid #F1F2F4;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &--grey {
+            background-color: #B0C3C7;
+        }
+
+        &--blue {
+            background-color: #3B6392;
+        }
+
+        &--dark {
+            background-color: #BFC3C8;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.3s;
+        }
+    }
+
+    #btn-1:checked ~ .productInfo__buttonsColor-controls label[for="btn-1"] {
+        background-color: #B0C3C7;
+        border: 2px solid white;
+        box-shadow: 0 0 5px rgba(#B0C3C7, 1.0);
+    }
+
+    #btn-2:checked ~ .productInfo__buttonsColor-controls label[for="btn-2"] {
+        background-color: #3B6392;
+        border: 2px solid white;
+        box-shadow: 0 0 5px rgba(#3B6392, 1.0);
+    }
+
+    #btn-3:checked ~ .productInfo__buttonsColor-controls label[for="btn-3"] {
+        background-color: #BFC3C8;
+        border: 2px solid white;
+        box-shadow: 0 0 5px rgba(#BFC3C8, 1.0);
+    }
+
+    &__buttonsSize-controls {
+        display: flex;
+    }
+
+    &__buttonSize {
+        font-weight: 500;
+        font-size: 18px;
+        color: #727A82;
+
+        &:hover {
+            color: #151C22;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    }
+
+    &__buttonSize + &__buttonSize {
+        margin-left: 20px;
+    }
+
+    #btn-4:checked ~ .productInfo__buttonsSize-controls label[for="btn-4"],
+    #btn-5:checked ~ .productInfo__buttonsSize-controls label[for="btn-5"],
+    #btn-6:checked ~ .productInfo__buttonsSize-controls label[for="btn-6"],
+    #btn-7:checked ~ .productInfo__buttonsSize-controls label[for="btn-7"],
+    #btn-8:checked ~ .productInfo__buttonsSize-controls label[for="btn-8"] {
+        color: #151C22;
+    }
+
+    &__price {
+        padding-bottom: 48px;
+    }
+
+    &__button {
+        padding: 23px 56px;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            transition: all 0.3;
+        }
+    }
+}
+
+.productSlider {
+    width: 46.25%;
+    position: relative;
+
+    &__small {
+        display: flex;
+    }
+
+    &__main {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    &__main-card {
+        display: flex !important;
+        justify-content: center;
+        img {
+            max-width: 400px;
+            height: 100%;
+            width: 100%;
+            max-height: 523px;
+        }
+    }
+
+    &__small {
+        margin-left: calc((100% - 400px) /2);
+        margin-right: calc((100% - 400px) /2);
+
+        &-card {
+            max-width: 85px;
+            max-height: 113px;
+            height: 100%;
+            margin-right: 20px;
+
+            &:hover {
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+        }
+
+        .slick-slide.slick-active {
+            width: max-content !important;
+        }
+    }
+
+    &__scroll {
+        position: absolute;
+        display: flex;
+        top: 24%;
+        width: 37px;
+        height: 37px;
+        justify-content: center;
+        border-radius: 50%;
+
+        &--left {
+            left: -13px;
+        }
+
+        &--right {
+            right: -13px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: 0px 3px 12px rgba(173, 152, 143, 1);
+            transition: all 0.3s;
+        }
+    }
+}
+
+.likeProducts {
+    .productCard {
+        &__image {
+            max-height: 374px;
+        }
+    }
+}
+
+@media screen and ( max-width: 960px ) { 
+    .productInfo {
+        padding: 47px 15px 50px 50px;
+        max-width: 48.0%;
+
+        &__text {
+            max-width: 284px;
+            font-size: 14px;
+            padding-bottom: 46px;
+        }
+    }
+}
+
+@media screen and ( max-width: 895px ) { 
+    .about-product {
+        margin-top: 34px;
+        margin-bottom: 47px;
+    }
+
+    .product {
+        max-height: 602px;
+    }
+
+    .productSlider {
+        width: 48%;
+
+        &__scroll {
+            display: none !important;
+        }
+
+        &__small {
+            margin-left: 0;
+            margin-right: calc(100% - 324px);
+        }
+
+        &__main-card {
+            max-width: 324px;
+            max-height: 360px;
+            width: 100%;
+            img {
+                max-width: 324px;
+                max-height: 360px;
+            }
+        }
+
+        &__main {
+            margin-bottom: 22px;
+        }
+
+        &__small-card {
+            max-width: 151px;
+            max-height: 99px;
+            height: 100%;
+            margin-right: 22px;
+            margin-bottom: 19px;
+
+            img {
+                height: 99px;
+                width: 151px;
+            }
+        }
+    }
+
+    .likeProducts {
+        padding-bottom: 50px;
+
+        .productCard {
+            padding-bottom: 46px;
+        }
+    }
+}
+
+@media screen and ( max-width: 768px ) { 
+    .productSlider {
+        &__small {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and ( max-width: 640px ) { 
+    .product {
+        max-height: max-content;
+        padding: 0 23px 523px;
+    }
+
+    .productInfo {
+        padding: 37px 15px 40px;
+        max-width: 100%;
+        top: auto;
+
+        &__title {
+            padding-bottom: 23px;
+        }
+
+        &__smallTitle {
+            font-size: 16px;
+        }
+
+        &__text {
+            padding-bottom: 30px;
+        }
+
+        &__buttonsColor {
+            padding-bottom: 30px;
+        }
+
+        &__buttonSize {
+            font-size: 14px;
+            line-height: 1.0;
+        }
+
+        &__buttonsSize {
+            padding-top: 20px;
+            padding-bottom: 31px;
+        }
+
+        &__price {
+            padding-bottom: 33px;
+        }
+    }
+
+    .productInfo__buttonSize + .productInfo__buttonSize {
+        margin-left: 26px;
+    }
+
+    .productInfo__buttonColor + .productInfo__buttonColor {
+        margin-left: 14px;
+    }
+
+    .about-product {
+        margin-bottom: 7px;
+        margin-top: 14px;
+    }
+
+    .productSlider {
+        width: 100%;
+
+        &__small {
+            display: none;
+        }
+
+        &__scroll {
+            display: block !important;
+            top: 35%;
+            width: 30px;
+            height: 30px;
+
+            &--right {
+                right: -35px;
+            }
+
+            &--left {
+                left: -33px;
+            }
+
+            img {
+                height: 18px;
+            }
+        }
+
+        &__main-card {
+            max-width: 100%;
+            max-height: 100%;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        &__main {
+            margin-bottom: 0;
+            padding-bottom: 39px;
+        }
+    }
+
+    .likeProducts {
+        padding-bottom: 59px;
+
+        .productCard {
+            padding-bottom: 20px;
+
+            &__product {
+                padding-top: 1px;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 320px ) { 
+    .productSlider__main-card {
+        max-height: 310px;
+    }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "mainImage": "../assets/img/catalog-1.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 40"
+  },
+  {
+    "mainImage": "../assets/img/catalog-2.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 70"
+  },
+  {
+    "mainImage": "../assets/img/catalog-3.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 60"
+  },
+  {
+    "mainImage": "../assets/img/catalog-4.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 50"
+  },
+  {
+    "mainImage": "../assets/img/catalog-5.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 40"
+  },
+  {
+    "mainImage": "../assets/img/catalog-6.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 110"
+  },
+  {
+    "mainImage": "../assets/img/catalog-7.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 160"
+  },
+  {
+    "mainImage": "../assets/img/catalog-8.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 35"
+  },
+  {
+    "mainImage": "../assets/img/catalog-9.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 85"
+  },
+  {
+    "mainImage": "../assets/img/catalog-9.png",
+    "name": "Jacket",
+    "information": "text",
+    "price": "$ 99"
+  }
+]
